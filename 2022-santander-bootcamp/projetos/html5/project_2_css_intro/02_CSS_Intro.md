@@ -73,3 +73,68 @@ thickness - style - color
 	padding-top: 5px;
 	padding-left: 3px;
 }
+
+
+
+#### Fonts
+
+.post_title{
+	font-family: Verdana, Arial;	//in case the first one isn't available, the next will take place
+	font-style: italic;
+	font-weight: bold;
+	text-transform: upppercase/lowercase/capitalize;
+	text-decoration: underline/overline/line-through;
+
+}
+
+> Capitalize turns every first letter in a sentence into a capitalized one.
+
+
+
+#### Margin
+
+The main frame of the contents. It's serves as the base for the borders. Basically, if you change any numbers you put into the margin, everything else inside it is reshaped.
+
+body {
+	margin: auto;	// whichever the screen's size is, auto will adapt to it and 'centralize' the content.
+
+}
+
+
+
+#### Lists
+
+ul {
+	list-style-type: square;
+	list-style-image: url("lil_tentacle.png");
+	list-style-type: "\1F44D"; //this is the code of an emoji
+
+}
+
+ol {
+	list-style-type: upper-roman;
+
+}
+
+
+
+Since CSS works like a cascade, it is possible to access the <li> and <a> contents inside the lists without having to assign a **class** or **id** to them. Just like the next example:
+
+.contacts_list li a{
+	text-decoration: none;
+
+}
+
+
+
+#### Dimensions
+
+- width, height
+- max-width, max-height
+- margin
+- text-align
+
+It's important to remember that
+
+##### MARGIN > BORDER > PADDING > CONTENT
+
