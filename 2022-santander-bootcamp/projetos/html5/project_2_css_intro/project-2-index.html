@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>First HTML5 file</title>
+    <link rel="stylesheet" href="project-2-style.css">
+</head>
+
+<body>
+    <header>
+        <img class="profile_image" src="papers_please.png"
+            alt="Ilustração de um personagem encapuzado de Papers Please.">
+        <h1 id="main_title">Ísis Bastos Albuquerque</h1>
+    </header>
+    <section>
+        <header>
+            <h2 class="subtitle">Posts</h2>
+        </header>
+        <article class="post">
+            <header>
+                <h3 class="post_title">Post #1</h3>
+                <img class="post_image" src="another_cool_octopus.jpg" alt="Foto de um polvo flutuando." height="600">
+            </header>
+            <p class="post_content">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <a target="_blank"
+                    href="https://lipsum.com">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a>. Ut
+                enim ad <a href="mailto:isis.alb99@gmail.com">minim veniam</a> , quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </article>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="mailto:isis.alb99@gmail.com">Mail</a>
+            </li>
+            <li>
+                You can also copy my mail <a href="#"
+                    onclick="CopyToClipboard('isis.alb99@gmail.com');return false;">here</a>!
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/isisalbuquerque/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/IsisAlbuquerque" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    function CopyToClipboard(id) {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+    }
+</script>
+
+</html>

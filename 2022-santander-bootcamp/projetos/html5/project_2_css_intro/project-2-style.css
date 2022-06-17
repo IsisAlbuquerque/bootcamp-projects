@@ -1,0 +1,39 @@
+body {
+    background: #f7f7f7;
+}
+
+.profile_image {
+    border: 1px solid #505050;
+    border-radius: 50%;
+}
+
+#main_title,
+.post_title,
+.subtitle {
+    color: #505050;
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    border: 3px solid #505050;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.post_image {
+    margin-bottom: 15px;
+}
