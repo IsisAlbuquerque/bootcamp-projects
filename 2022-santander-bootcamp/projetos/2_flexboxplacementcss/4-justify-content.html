@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals – Justify Content</title>
+    <style>
+        .container {
+            max-width: 400px;
+            border: 1px solid olivedrab;
+            margin: 0;
+            display: flex;
+        }
+
+        .item {
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Justify-Content: Flex-Start (default)</h1>
+    <section class="container flex-start">
+        <div class="item">One</div>
+        <div class="item">One Two</div>
+        <div class="item">One Two Three</div>
+    </section>
+
+    <h1>Justify-Content: Flex-End</h1>
+    <section class="container flex-end">
+        <div class="item">One</div>
+        <div class="item">One Two</div>
+        <div class="item">One Two Three</div>
+    </section>
+
+    <h1>Justify-Content: Center</h1>
+    <section class="container center">
+        <div class="item">One</div>
+        <div class="item">One Two</div>
+        <div class="item">One Two Three</div>
+    </section>
+
+    <h1>Justify-Content: Space-Between</h1>
+    <section class="container space-between">
+        <div class="item">One</div>
+        <div class="item">One Two</div>
+        <div class="item">One Two Three</div>
+        <div class="item">One Two Three Four</div>
+        <div class="item">Five</div>
+    </section>
+
+    <h1>Justify-Content: Space-Around</h1>
+    <section class="container space-around">
+        <div class="item">One</div>
+        <div class="item">One Two</div>
+        <div class="item">One Two Three</div>
+        <div class="item">One Two Three Four</div>
+        <div class="item">Five</div>
+    </section>
+
+
+</body>
+
+</html>
